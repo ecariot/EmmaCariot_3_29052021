@@ -1,0 +1,19 @@
+{
+  "name": "projet-3",
+  "version": "1.0.0",
+  "description": "Dynamiser une page web",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch --style compressed ./src/main.scss:./src/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ecariot/Projet-3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ecariot/Projet-3/issues"
+  },
+  "homepage": "https://github.com/ecariot/Projet-3#readme"
+}

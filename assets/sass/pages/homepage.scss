@@ -1,0 +1,37 @@
+@import "../utils/variables";
+    
+    header {
+        .logo {
+            color: $colour-primary;
+            display: flex;
+            justify-content: center;
+        }
+
+        .location {
+            &__result {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                padding: 1rem 0rem;
+                color: black;
+                background: #F2F2F2;
+            }
+
+            &__section {
+                background: #F2F2F2;
+            }
+
+            &__icon {
+                margin-right: 1rem;
+            }
+        }
+
+        .header-button {
+            border-radius: 2rem;
+            border: 2px solid $colour-primary;
+            background-color: $colour-primary;
+            padding: 1rem;
+            color: white;
+        }
+
+    }

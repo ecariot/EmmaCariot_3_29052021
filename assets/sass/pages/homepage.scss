@@ -1,37 +1,181 @@
 @import "../utils/variables";
-    
-    header {
-        .logo {
-            color: $colour-primary;
+
+@media (max-width: $breakpoint-mobile) {
+
+    body {
+    font-family: 'Roboto', sans-serif;
+    }
+
+    .logo {
+        color: $colour-primary;
+        display: flex;
+        justify-content: center;
+    }
+
+    .location {
+        &__result {
             display: flex;
+            flex-direction: row;
             justify-content: center;
+            color: black;
+            background: #7874743b;
+            border-top: 2px solid #7874743b;
+            font-weight: bolder;
         }
 
-        .location {
-            &__result {
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                padding: 1rem 0rem;
-                color: black;
-                background: #F2F2F2;
-            }
-
-            &__section {
-                background: #F2F2F2;
-            }
-
-            &__icon {
-                margin-right: 1rem;
-            }
+        &__section {
+            background: #f2f2f22f;
         }
 
-        .header-button {
-            border-radius: 2rem;
-            border: 2px solid $colour-primary;
-            background-color: $colour-primary;
-            padding: 1rem;
+        &__icon {
+            margin-right: 1rem;
+            margin-top: 0.9rem;
+        }
+    }
+
+    .header-button {
+        border-radius: 2rem;
+        border: 2px solid $colour-primary;
+        background-color: $colour-primary;
+        padding: 1rem;
+        color: white;
+        margin: 0 6.5rem 2rem;
+    }
+
+    .header-bloc {
+        background-color: #F2F2F2;
+    }
+
+    .header-text {
+        text-align: center;
+    }
+
+    .header-text h1 {
+        margin-top: 0px;
+    }
+
+    .header-text h2 {
+        font-weight: normal;
+    }
+
+    h1 {
+        font-size: 1.5em;
+        margin: 1rem 1rem;
+    }
+
+    .fonctionnement-button-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: $colour-primary;
+    border: 2px solid $colour-primary;
+    border-radius: 15px;
+    width: 20px;
+    height: 20px;
+    margin-right: 1rem;
+    }
+
+    .fonctionnement-button {
+    display: flex;
+    align-items: center;
+    border: 1px solid #F2F2F2;
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 1px rgb(0 0 0 / 20%);
+    transition-duration: 1s;
+    margin-bottom: 1rem;
+    margin-left: 1.5rem;
+    cursor: pointer;
+    transition-duration: 1sc;
+    }
+
+    .fonctionnement-button:hover {
+        background-color: $colour-primary;
+    }
+
+    .fonctionnement-button-icon {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+    }
+
+    .restaurant img {
+        object-fit: cover;
+        border-radius: 10px 10px 0px 0px;
+        width: 100%;
+        height: 12rem;
+    }
+
+    .restaurant {
+        background-color: #F2F2F2;
+        padding: 1rem 0;
+    }
+
+    .restaurant-place {
+        display: flex;
+        border: 1px solid white;
+        border-radius: 10px;
+        /* flex-wrap: wrap; */
+        flex-direction: column;
+        background-color: white;
+        margin: 1rem 1rem;
+    }
+
+    .restaurant-name {
+        display: flex;
+        margin: 0 1rem;
+    }
+
+    .restaurant-icon {
+        display: flex;
+        align-items: center;
+        margin-left: 12rem;
+        cursor: pointer;
+        transition-duration: 1s;
+    }
+
+    .restaurant-tag {
+        position: absolute;
+        margin-left: 17rem;
+        margin-top: 1rem;
+        padding: .25rem .5rem;
+        color: #288364;
+        background: #99e2d0;
+        border-radius: 2px;
+    }
+
+    .restaurant h3 {
+        margin: 0 1rem;
+    }
+
+    .restaurant h2 {
+        margin: 0px;
+    }
+
+    footer {
+        padding: 1rem 1rem;
+        background-color: black;
+
+        .footer-logo  {
+            color: white;
+            font-family: 'Shrikhand';
+            font-size: 1.5rem;
+        }
+        .footer-item {
             color: white;
         }
 
+        .footer-row-icon {
+            color: white;
+            margin-right: 1rem;
+        }
+
+        .footer-row--1 {
+            display: flex;
+        }
+
     }
+
+
+}

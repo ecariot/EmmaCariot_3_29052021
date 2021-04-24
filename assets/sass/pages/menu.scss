@@ -1,0 +1,67 @@
+@import "../utils/variables";
+
+@media (max-width: $breakpoint-mobile) {
+    body {
+        margin: 0px;
+    }
+
+    .header-header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        position: relative;
+    }
+
+    .header-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        left: 1rem;
+    }
+
+    .header-photo img {
+        width: 100%;
+    }
+
+    .menu {
+        border: 1px solid white;
+        background: rgb(226, 221, 221);
+        border-radius: 2rem 2rem 0px 0px;
+        position: relative;
+        top: -2rem;
+    }
+
+    .menu-header {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: flex;
+        align-items: center;
+        margin-left: 10rem;
+    }
+
+    .menu h1 {
+        font-family: 'Shrikhand';
+    }
+
+    .case {
+        border: 1px solid white;
+        border-radius: 10px;
+        background-color: white;
+        margin: 1rem 1rem;
+    }
+
+    .entrees-details {
+        display: flex;
+    }
+
+    .price {
+        display: flex;
+        align-items: center;
+        margin-left: 13rem;
+    }
+}

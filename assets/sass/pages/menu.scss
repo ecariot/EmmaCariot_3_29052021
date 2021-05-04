@@ -32,6 +32,10 @@
         border-radius: 2rem 2rem 0px 0px;
         position: relative;
         top: -2rem;
+
+        h2 {
+            margin-left: 1rem;
+        }
     }
 
     .menu-header {
@@ -53,15 +57,31 @@
         border-radius: 10px;
         background-color: white;
         margin: 1rem 1rem;
+
+        h3 {
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
     }
 
-    .entrees-details {
+    .details {
         display: flex;
+        margin-bottom: 0.5rem;
     }
 
     .price {
         display: flex;
         align-items: center;
         margin-left: 13rem;
+    }
+
+    .bottom-button {
+        border-radius: 2rem;
+        border: 2px solid $colour-primary;
+        background: linear-gradient(to bottom right, $colour-primary, white);
+        padding: 1rem;
+        color: white;
+        margin-bottom: 2rem;
+        margin-left: 9rem;
     }
 }

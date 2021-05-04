@@ -1,9 +1,10 @@
 @import "../utils/variables";
 
-@media (max-width: $breakpoint-mobile) {
+/*@media (max-width: $breakpoint-mobile) {*/
 
     body {
-    font-family: 'Roboto', sans-serif;
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
     }
 
     .logo {
@@ -36,10 +37,11 @@
     .header-button {
         border-radius: 2rem;
         border: 2px solid $colour-primary;
-        background-color: $colour-primary;
+        background: linear-gradient(to bottom right, $colour-primary, white);
         padding: 1rem;
         color: white;
-        margin: 0 6.5rem 2rem;
+        margin-bottom: 2rem;
+        margin-left: 7rem;
     }
 
     .header-bloc {
@@ -64,30 +66,37 @@
     }
 
     .fonctionnement-button-row {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    background-color: $colour-primary;
-    border: 2px solid $colour-primary;
-    border-radius: 15px;
-    width: 20px;
-    height: 20px;
-    margin-right: 1rem;
+        color: white;
+        background-color: $colour-primary;
+        border: 2px solid $colour-primary;
+        border-radius: 15px;
+        width: 20px;
+        height: 20px;
+        margin-right: 1rem;
+        position: absolute;
+        text-align: center;
+        left: -15px;
+
+        p {
+            margin: 0px;
+        }
+
     }
 
     .fonctionnement-button {
-    display: flex;
-    align-items: center;
-    border: 1px solid #F2F2F2;
-    background-color: #F2F2F2;
-    border-radius: 10px;
-    box-shadow: 1px 1px 10px 1px rgb(0 0 0 / 20%);
-    transition-duration: 1s;
-    margin-bottom: 1rem;
-    margin-left: 1.5rem;
-    cursor: pointer;
-    transition-duration: 1sc;
+        display: flex;
+        align-items: center;
+        border: 1px solid #F2F2F2;
+        background-color: #F2F2F2;
+        border-radius: 10px;
+        box-shadow: 1px 1px 10px 1px rgb(0 0 0 / 20%);
+        transition-duration: 1s;
+        margin-bottom: 1rem;
+        margin-left: 1.5rem;
+        cursor: pointer;
+        transition-duration: 1sc;
+        position: relative;
+        margin-right: 1rem;
     }
 
     .fonctionnement-button:hover {
@@ -95,10 +104,13 @@
     }
 
     .fonctionnement-button-icon {
-    display: flex;
-    align-items: center;
-    margin-right: 1rem;
+        display: flex;
+        align-items: center;
+        margin-right: 1rem;
+        margin-left: 2rem;
     }
+
+    
 
     .restaurant img {
         object-fit: cover;
@@ -125,14 +137,18 @@
     .restaurant-name {
         display: flex;
         margin: 0 1rem;
-    }
+        position: relative;
 
-    .restaurant-icon {
-        display: flex;
-        align-items: center;
-        cursor: pointer;
-        transition-duration: 1s;
-        margin-left: 8rem;
+        .restaurant-icon {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            transition-duration: 1s;
+            margin-left: 8rem;
+            position: absolute;
+            right: 0px;
+            top: 1rem;
+        }
     }
 
     .restaurant-tag {
@@ -147,6 +163,7 @@
 
     .restaurant h3 {
         margin: 0 1rem;
+        font-weight: 100;
     }
 
     .restaurant h2 {
@@ -178,4 +195,3 @@
     }
 
 
-}

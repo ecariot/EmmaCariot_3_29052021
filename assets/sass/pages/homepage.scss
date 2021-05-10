@@ -36,12 +36,14 @@
 
     .header-button {
         border-radius: 2rem;
-        border: 2px solid $colour-primary;
-        background: linear-gradient(to bottom right, $colour-primary, white);
+        border: 0px solid #9356dc;
+        background: linear-gradient(to bottom right, #FF79DA, #9356DC);
         padding: 1rem;
-        color: white;
+        color: #fff;
         margin-bottom: 2rem;
-        margin-left: 7rem;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     .header-bloc {
@@ -60,10 +62,13 @@
         font-weight: normal;
     }
 
-    h1 {
-        font-size: 1.5em;
-        margin: 1rem 1rem;
+    .fonctionnement {
+        h1 {
+            font-size: 1.5em;
+            margin: 2rem 1rem;
+        }
     }
+   
 
     .fonctionnement-button-row {
         color: white;
@@ -92,11 +97,11 @@
         box-shadow: 1px 1px 10px 1px rgb(0 0 0 / 20%);
         transition-duration: 1s;
         margin-bottom: 1rem;
-        margin-left: 1.5rem;
+        margin-left: 1rem;
         cursor: pointer;
         transition-duration: 1sc;
         position: relative;
-        margin-right: 1rem;
+        margin-right: 0.5rem;
     }
 
     .fonctionnement-button:hover {
@@ -122,6 +127,10 @@
     .restaurant {
         background-color: #F2F2F2;
         padding: 1rem 0;
+        
+        h1 {
+            margin-left: 1rem;
+        }
     }
 
     .restaurant-place {
@@ -153,12 +162,11 @@
 
     .restaurant-tag {
         position: absolute;
-        margin-left: 17rem;
-        margin-top: 1rem;
         padding: .25rem .5rem;
         color: #288364;
         background: #99e2d0;
         border-radius: 2px;
+        right: 2rem;
     }
 
     .restaurant h3 {

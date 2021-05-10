@@ -2,6 +2,52 @@
 
 /*@media (max-width: $breakpoint-mobile) {*/
 
+    .loader {
+        &__section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            width: 100vw;
+            position: fixed;
+            top: 0; left: 0;
+            z-index: 2;
+            background-color: rgba(255, 255, 255, 0.90);
+            animation: loader 0.01s;
+            animation-delay: 1s;
+            animation-fill-mode: both;
+        }
+    
+        &__wrapper {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 7.5rem;
+        }
+    
+        &__item {
+            height: 1.5rem;
+            width: 1.5rem;
+            border-radius: 1rem;
+            animation: jump 1s;
+            animation-iteration-count: 1;
+    
+            &--1 {
+                background: $colour-primary;
+            }
+    
+            &--2 {
+                background: $colour-secondary;
+                animation-delay: 0.25s;
+            }
+    
+            &--3 {
+                background: $colour-terciary;
+                animation-delay: 0.5s;
+            }
+        }
+    }
+
     body {
         font-family: 'Roboto', sans-serif;
         margin: 0;
@@ -34,6 +80,15 @@
         }
     }
 
+    .restaurant-place {
+        cursor: pointer;
+        transition-duration: 1sc;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
     .header-button {
         border-radius: 2rem;
         border: 0px solid #9356dc;

@@ -1,0 +1,95 @@
+@import "../utils/variables";
+
+ 
+    body {
+        margin: 0px;
+    }
+
+    .header-header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        position: relative;
+    }
+
+    .header-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        left: 1rem;
+    }
+
+    .header-photo img {
+        width: 100%;
+    }
+
+    .menu {
+        border: 1px solid white;
+        background: #f2f2f2;
+        border-radius: 2rem 2rem 0px 0px;
+        position: relative;
+        top: -2rem;
+        margin-bottom: -2rem;
+
+        h2 {
+            margin-left: 1rem;
+            font-weight: normal;
+            border-bottom: 2px solid $colour-terciary;
+            width: 3rem;
+        }
+    }
+
+    .menu-header {
+        display: flex;
+        justify-content: space-between;
+        padding-right: 2rem;
+    }
+
+    .menu-icon {
+        display: flex;
+        align-items: center;
+    }
+
+    .menu h1 {
+        font-family: 'Shrikhand';
+        margin-left: 1rem;
+    }
+
+    .case {
+        border: 1px solid white;
+        border-radius: 10px;
+        background-color: white;
+        margin: 1rem 1rem;
+        padding: 0 0.5rem;
+
+        h3 {
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    .details {
+        display: flex;
+        margin-bottom: 0.5rem;
+        justify-content: space-between;
+    }
+
+    .bottom-button {
+        border-radius: 2rem;
+        border: 0px solid $colour-primary;
+        background: linear-gradient(to bottom right, $colour-secondary, $colour-primary);
+        padding: 1rem;
+        color: white;
+        margin-bottom: 2rem;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+
+.menu-plat-icon {
+    animation: rotation 1sc;
+}

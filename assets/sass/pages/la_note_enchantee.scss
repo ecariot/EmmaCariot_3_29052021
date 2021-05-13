@@ -65,6 +65,7 @@
         background-color: white;
         margin: 1rem 1rem;
         padding: 0 0.5rem;
+        box-shadow: 1px 1px 10px 1px rgb(0 0 0 / 20%);
 
         h3 {
             margin-top: 0.5rem;
@@ -93,4 +94,13 @@
 
 .menu-plat-icon {
     animation: rotation 1sc;
+}
+
+.case {
+    animation: 2s;
+    -webkit-animation: fadein 2s;
+}
+
+.fa-check-circle:hover {
+    animation: rotation 1s;
 }

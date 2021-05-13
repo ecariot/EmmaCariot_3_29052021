@@ -161,7 +161,9 @@
     }
 
     .fonctionnement-button:hover {
-        background-color: $colour-primary;
+        background-color: $colour-primary-light;
+        cursor: pointer;
+        transition-duration: 1s;
     }
 
     .fonctionnement-button-icon {
@@ -213,8 +215,33 @@
             position: absolute;
             right: 0px;
             top: 1rem;
+            background: -webkit-linear-gradient($colour-secondary, $colour-primary);
+            -webkit-text-fill-color: transparent;
+            transition-duration: 0.3s;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color:transparent;
         }
+
+
     }
+
+    /*.fa-heart {
+        color: #FFF;
+        background-color: transparent;
+        border-radius: 50%;
+        padding:.2em;
+    }
+    .fa-heart::before {
+        content: "\f004";
+        font-weight: bold;
+        transition: color 1s ease-out;
+    }
+    .fa-heart:hover::before{
+        color: -webkit-linear-gradient($colour-secondary, $colour-primary);
+        cursor: pointer;
+    }*/
 
     .restaurant-tag {
         position: absolute;

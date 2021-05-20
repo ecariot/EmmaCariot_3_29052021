@@ -27,101 +27,145 @@
     </a>
   </header>
 
-  <div class="menu">
-    <div class="menu-header">
-      <h1>Le délice des sens</h1>
-      <div class="menu-icon">
-        <i class="far fa-heart"></i>
-      </div>
-    </div>
-    <div class="entrees">
-      <h2>Entrées</h2>
-      <div class="entrees-wrapper">
-        <div class="case">
-          <h3 class="entrees-title">Tartare de thon</h3>
-          <div class="details">
-            <span>Assaisonné au yuzu</span>
-            <span class="price">25€</span>
-          </div>
-        </div>
-        <div class="case">
-          <h3 class="entrees-title">Bouchée de homard croustillant</h3>
-          <div class="details">
-            <span>Et sa farandole de petits légumes</span>
-            <span class="price">35€</span>
-          </div>
-        </div>
-        <div class="case">
-          <h3 class="entrees-title">Velouté de cèpes </h3>
-          <div class="details">
-            <span>Aux truffes</span>
-            <span class="price">20€</span>
-          </div>
-        </div>
-      </div>
-    </div>
+  <main class="menu container">
+    <header class="menu__header">
+      <h2 class="menu__title">Le délice des sens</h2>
+      <button class="menu__btn">
+        <i class="menu__like menu__like--noBg far fa-heart fa-2x"></i>
+        <i class="menu__like menu__like--bg fas fa-heart fa-2x"></i>
+      </button>
+    </header>
 
-    <div class="plats">
-      <h2>Plats</h2>
-      <div class="plat-wrapper">
-        <div class="case">
-          <h3 class="plat-title">Poulet rôti aux herbes de Provence </h3>
-          <div class="details">
-            <span>Et sa crème de truffe</span>
-            <span class="price">
-              40€
-              <span class="menu-plat-icon">
-                <i class="fas fa-check-circle"></i>
-              </span>
-            </span>
+    <div class="submenus">
+      <section class="submenu">
+        <h3 class="submenu-title">Entrées</h3>
+        <section class="case delay-0">
+          <header class="case-header">
+            <h4 class="case-title">Tartare de thon</h4>
+            <p class="case-description">Assaisonné au yuzu</p>
+          </header>
+          <div class="case-price">25€</div>
+          <div class="case-confirmation">
+            <div class="case-wrap-icon">
+              <i class="case-icon fas fa-check"></i>
+            </div>
           </div>
-        </div>
-
-        <div class="case">
-          <h3 class="plat-title">Langouste rôtie</h3>
-          <div class="details">
-            <span>Et ses légumes de saison</span>
-            <span class="price">35€</span>
+        </section>
+        
+        <section class="case delay-1">
+          <header class="case-header">
+            <h4 class="case-title">Bouchée de homard croustillant </h4>
+            <p class="case-description">Et sa farandole de petits légumes</p>
+          </header>
+          <div class="case-price">35€</div>
+          <div class="case-confirmation">
+            <div class="case-wrap-icon">
+              <i class="case-icon fas fa-check"></i>
+            </div>
           </div>
-        </div>
-        <div class="case">
-          <h3 class="plat-title">Côte de boeuf Angus</h3>
-          <div class="details">
-            <span>Et sa purée de panais</span>
-            <span class="price">44€</span>
+        </section>
+  
+        <section class="case delay-2">
+          <header class="case-header">
+            <h4 class="case-title">Velouté de cèpes</h4>
+            <p class="case-description">Aux truffes</p>
+          </header>
+          <div class="case-price">20€</div>
+          <div class="case-confirmation">
+            <div class="case-wrap-icon">
+              <i class="case-icon fas fa-check"></i>
+            </div>
           </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="desserts">
-      <h2>Desserts</h2>
-      <div class="dessert-wrapper">
-        <div class="case">
-          <h3 class="dessert-title">Farandole de desserts</h3>
-          <div class="details">
-            <span>Du chef</span>
-            <span class="price">18€</span>
+        </section>
+      </section>
+  
+      <section class="submenu">
+        <h3 class="submenu-title">Plats</h3>
+        <section class="case delay-3">
+          <header class="case-header">
+            <h4 class="case-title">Poulet rôti aux herbes de Provence</h4>
+            <p class="case-description">Et sa crème de truffe</p>
+          </header>
+          <div class="case-price">40€</div>
+          <div class="case-confirmation">
+            <div class="case-wrap-icon">
+              <i class="case-icon fas fa-check"></i>
+            </div>
           </div>
-        </div>
-        <div class="case">
-          <h3 class="dessert-title">Crème brulée</h3>
-          <div class="details">
-            <span>Revisitée</span>
-            <span class="price">22€</span>
+        </section>
+        
+        <section class="case delay-4">
+          <header class="case-header">
+            <h4 class="case-title">Langouste rôtie</h4>
+            <p class="case-description">Et ses légumes de saison</p>
+          </header>
+          <div class="case-price">35€</div>
+          <div class="case-confirmation">
+            <div class="case-wrap-icon">
+              <i class="case-icon fas fa-check"></i>
+            </div>
           </div>
-        </div>
-        <div class="case">
-          <h3 class="dessert-title">Tiramisu</h3>
-          <div class="details">
-            <span>À la noisette</span>
-            <span class="price">23€</span>
+        </section>
+  
+        <section class="case delay-5">
+          <header class="case-header">
+            <h4 class="case-title">Côte de boeuf Angus </h4>
+            <p class="case-description">Et sa purée de panais</p>
+          </header>
+          <div class="case-price">44€</div>
+          <div class="case-confirmation">
+            <div class="case-wrap-icon">
+              <i class="case-icon fas fa-check"></i>
+            </div>
           </div>
-        </div>
-      </div>
+        </section>
+      </section>
+  
+      <section class="submenu">
+        <h3 class="submenu-title">Desserts</h3>
+        <section class="case delay-6">
+          <header class="case-header">
+            <h4 class="case-title">Farandole de desserts</h4>
+            <p class="case-description">Du chef</p>
+          </header>
+          <div class="case-price">18€</div>
+          <div class="case-confirmation">
+            <div class="case-wrap-icon">
+              <i class="case-icon fas fa-check"></i>
+            </div>
+          </div>
+        </section>
+        
+        <section class="case delay-7">
+          <header class="case-header">
+            <h4 class="case-title">Crème brulée </h4>
+            <p class="case-description">Revisitée</p>
+          </header>
+          <div class="case-price">22€</div>
+          <div class="case-confirmation">
+            <div class="case-wrap-icon">
+              <i class="case-icon fas fa-check"></i>
+            </div>
+          </div>
+        </section>
+  
+        <section class="case delay-8">
+          <header class="case-header">
+            <h4 class="case-title">Tiramisu </h4>
+            <p class="case-description">À la noisette</p>
+          </header>
+          <div class="case-price">23€</div>
+          <div class="case-confirmation">
+            <div class="case-wrap-icon">
+              <i class="case-icon fas fa-check"></i>
+            </div>
+          </div>
+        </section>
+      </section>
     </div>
     <button class="bottom-button">Commander</button>
-  </div>
+  </main>
+  
   <footer>
     <span class="footer-logo">ohmyfood</span>
     <div class="footer-row-all">

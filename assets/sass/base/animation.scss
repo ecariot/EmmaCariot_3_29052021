@@ -37,7 +37,7 @@
     }
 }
 
-@-webkit-keyframes fadein { /* sur Safari et Chrome */
+@-webkit-keyframes fadein { 
     from {
         opacity:0;
     }
@@ -58,7 +58,7 @@
 
 @keyframes rotation {
     0% {
-        transform: rotate(360deg);
+        transform: rotate(180deg);
     }
     
     100% {

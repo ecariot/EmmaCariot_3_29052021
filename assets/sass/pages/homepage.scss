@@ -1,6 +1,5 @@
 @import "../utils/variables";
 
-/*@media (max-width: $breakpoint-mobile) {*/
 
     .loader {
         &__section {
@@ -183,6 +182,7 @@
         display: flex;
         margin: 0 1rem;
         position: relative;
+        justify-content: space-between;
         .restaurant-icon {
             display: flex;
             align-items: center;
@@ -210,6 +210,22 @@
     .restaurant h2 {
         margin: 0px;
     }
+    .menu {
+        &-like {
+        transition-duration: .25s;
+        background-color: white;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        mix-blend-mode: lighten;
+        }
+    }
+
     footer {
         padding: 1rem 1rem;
         background-color: black;
@@ -229,58 +245,4 @@
             display: flex;
         }
     }
-
-
-    /*&__btn {
-        height: 2rem;
-        width: 2rem;
-        background-color: transparent;
-        border: transparent 0px solid;
-        padding: 0;
-        display:flex;
-        align-items:center;
-        justify-content:center;
-        cursor: pointer;
-        position: relative;
-        background-color: black;
-        
-        &:hover::before {
-        opacity: 1;
-        }
-        
-        &::before {
-        opacity: 0;
-        transition: 0.5s;
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        background:linear-gradient(0deg, $colour-primary 0%,$colour-secondary 100%);
-        }
-    }
-
-    &__like {
-        transition-duration: .25s;
-        background-color: #f6f6f6;
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        display:flex;
-        align-items:center;
-        justify-content:center;
-        mix-blend-mode: lighten;
-    }
-
-    &__btn:hover {
-        .menu__like {
-        &--noBg {
-            opacity: 0;
-        }
-    }
-    }
-}*/
-
+   

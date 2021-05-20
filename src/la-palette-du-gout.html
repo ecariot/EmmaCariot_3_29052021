@@ -28,101 +28,144 @@
     
   </header>
 
-  <div class="menu">
-    <div class="menu-header">
-      <h1>La palette du goût</h1>
-      <div class="menu-icon">
-        <i class="far fa-heart"></i>
-      </div>
-    </div>
-    <div class="entrees">
-      <h2>Entrées</h2>
-      <div class="entrees-wrapper">
-        <div class="case">
-          <h3 class="entrees-title">Fricassée d'escargot</h3>
-          <div class="details">
-            <span>Au piment d'Espelette </span>
-            <span class="price">25€</span>
+  <main class="menu container">
+    <header class="menu__header">
+      <h2 class="menu__title">La palette du goût</h2>
+      <button class="menu__btn">
+        <i class="menu__like menu__like--noBg far fa-heart fa-2x"></i>
+        <i class="menu__like menu__like--bg fas fa-heart fa-2x"></i>
+      </button>
+    </header>
+    <div class="submenus">
+      <section class="submenu">
+        <h3 class="submenu-title">Entrées</h3>
+        <section class="case delay-0">
+          <header class="case-header">
+            <h4 class="case-title">Fricassée d'escargot</h4>
+            <p class="case-description">Au piment d'Espelette</p>
+          </header>
+          <div class="case-price">25€</div>
+          <div class="case-confirmation">
+            <div class="case-wrap-icon">
+              <i class="case-icon fas fa-check"></i>
+            </div>
           </div>
-        </div>
-        <div class="case">
-          <h3 class="entrees-title">Foie gras de canard mi-cuit</h3>
-          <div class="details">
-            <span>Et ses copeaux de truffe noire</span>
-            <span class="price">35€</span>
+        </section>
+        
+        <section class="case delay-1">
+          <header class="case-header">
+            <h4 class="case-title">Foie gras de canard mi-cuit</h4>
+            <p class="case-description">Et ses copeaux de truffe noire</p>
+          </header>
+          <div class="case-price">35€</div>
+          <div class="case-confirmation">
+            <div class="case-wrap-icon">
+              <i class="case-icon fas fa-check"></i>
+            </div>
           </div>
-        </div>
-        <div class="case">
-          <h3 class="entrees-title">Oeuf au plat</h3>
-          <div class="details">
-            <span>Assaisonné à la truffe sur lit de caviar</span>
-            <span class="price">20€</span>
+        </section>
+  
+        <section class="case delay-2">
+          <header class="case-header">
+            <h4 class="case-title">Oeuf au plat</h4>
+            <p class="case-description">Assaisonné à la truffe sur lit de caviar</p>
+          </header>
+          <div class="case-price">20€</div>
+          <div class="case-confirmation">
+            <div class="case-wrap-icon">
+              <i class="case-icon fas fa-check"></i>
+            </div>
           </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="plats">
-      <h2>Plats</h2>
-      <div class="plat-wrapper">
-        <div class="case">
-          <h3 class="plat-title">Filet de boeuf aux herbes</h3>
-          <div class="details">
-            <span>Accompagné de sa ribambelle de légumes</span>
-            <span class="price">
-              40€
-              <span class="menu-plat-icon">
-                <i class="fas fa-check-circle"></i>
-              </span>
-            </span>
+        </section>
+      </section>
+  
+      <section class="submenu">
+        <h3 class="submenu-title">Plats</h3>
+        <section class="case delay-3">
+          <header class="case-header">
+            <h4 class="case-title">Filet de boeuf aux herbes</h4>
+            <p class="case-description">Accompagné de sa ribambelle de légumes</p>
+          </header>
+          <div class="case-price">40€</div>
+          <div class="case-confirmation">
+            <div class="case-wrap-icon">
+              <i class="case-icon fas fa-check"></i>
+            </div>
           </div>
-        </div>
-
-        <div class="case">
-          <h3 class="plat-title">Parmentier de queue de boeuf</h3>
-          <div class="details">
-            <span>À la truffe noire sur sa purée de panais</span>
-            <span class="price">35€</span>
+        </section>
+        
+        <section class="case delay-4">
+          <header class="case-header">
+            <h4 class="case-title">Parmentier de queue de boeuf</h4>
+            <p class="case-description">À la truffe noire sur sa purée de panais</p>
+          </header>
+          <div class="case-price">35€</div>
+          <div class="case-confirmation">
+            <div class="case-wrap-icon">
+              <i class="case-icon fas fa-check"></i>
+            </div>
           </div>
-        </div>
-        <div class="case">
-          <h3 class="plat-title">Filet de turbot</h3>
-          <div class="details">
-            <span>Aux agrumes</span>
-            <span class="price">44€</span>
+        </section>
+  
+        <section class="case delay-5">
+          <header class="case-header">
+            <h4 class="case-title">Filet de turbot</h4>
+            <p class="case-description">Aux agrumes</p>
+          </header>
+          <div class="case-price">44€</div>
+          <div class="case-confirmation">
+            <div class="case-wrap-icon">
+              <i class="case-icon fas fa-check"></i>
+            </div>
           </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="desserts">
-      <h2>Desserts</h2>
-      <div class="dessert-wrapper">
-        <div class="case">
-          <h3 class="dessert-title">Paris-Brest</h3>
-          <div class="details">
-            <span>Revisité</span>
-            <span class="price">18€</span>
+        </section>
+      </section>
+  
+      <section class="submenu">
+        <h3 class="submenu-title">Desserts</h3>
+        <section class="case delay-6">
+          <header class="case-header">
+            <h4 class="case-title">Paris-Brest</h4>
+            <p class="case-description">Revisité</p>
+          </header>
+          <div class="case-price">18€</div>
+          <div class="case-confirmation">
+            <div class="case-wrap-icon">
+              <i class="case-icon fas fa-check"></i>
+            </div>
           </div>
-        </div>
-        <div class="case">
-          <h3 class="dessert-title">Macaron au chocolat d'exception </h3>
-          <div class="details">
-            <span>Et glace à la vanille de Madagascar</span>
-            <span class="price">22€</span>
+        </section>
+        
+        <section class="case delay-7">
+          <header class="case-header">
+            <h4 class="case-title">Macaron au chocolat d'exception </h4>
+            <p class="case-description">Et glace à la vanille de Madagascar</p>
+          </header>
+          <div class="case-price">22€</div>
+          <div class="case-confirmation">
+            <div class="case-wrap-icon">
+              <i class="case-icon fas fa-check"></i>
+            </div>
           </div>
-        </div>
-        <div class="case">
-          <h3 class="dessert-title">Mousse au chocolat</h3>
-          <div class="details">
-            <span>Au piment d'Espelette et à la truffe noire</span>
-            <span class="price">23€</span>
+        </section>
+  
+        <section class="case delay-8">
+          <header class="case-header">
+            <h4 class="case-title">Mousse au chocolat </h4>
+            <p class="case-description">Au piment d'Espelette et à la truffe noire</p>
+          </header>
+          <div class="case-price">23€</div>
+          <div class="case-confirmation">
+            <div class="case-wrap-icon">
+              <i class="case-icon fas fa-check"></i>
+            </div>
           </div>
-        </div>
-      </div>
+        </section>
+      </section>
     </div>
     <button class="bottom-button">Commander</button>
-  </div>
+  </main>
+
   <footer>
     <span class="footer-logo">ohmyfood</span>
     <div class="footer-row-all">

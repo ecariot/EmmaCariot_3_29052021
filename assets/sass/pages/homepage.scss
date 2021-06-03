@@ -1,22 +1,20 @@
 @import "../utils/variables";
 
 .loader {
-    &__section {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-        width: 100vw;
-        position: fixed;
-        top: 0; left: 0;
-        z-index: 2;
-        background-color: rgba(255, 255, 255, 0.90);
-        animation: loader 0.01s;
-        animation-delay: 1s;
-        animation-fill-mode: both;
-    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0; left: 0;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.90);
+    animation: loader 0.01s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
 
-    &__item {
+    &-item {
         height: 2rem;
         width: 2rem;
         border-radius: 1rem;
@@ -292,3 +290,4 @@ footer {
         display: flex;
     }
 }
+

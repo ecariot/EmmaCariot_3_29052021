@@ -132,9 +132,11 @@ body {
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
   overflow: hidden;
   cursor: pointer;
-  animation: itemAppear .6s;
+  /*animation: appearance 1.5s;
   animation-fill-mode: both;
-  transform: scale(0);
+ /* animation: itemAppear .6s;
+  animation-fill-mode: both;
+  transform: scale(0);*/
   max-width: 100%;
 
   &-header {
@@ -200,6 +202,25 @@ body {
     color: $colour-terciary;
   }
 }
+
+.plat {
+  animation: appearance 1.5s;
+  animation-fill-mode: both;
+  animation-delay: .5s;
+}
+
+.dessert {
+  animation: appearance 1.5s;
+  animation-fill-mode: both;
+  animation-delay: .7s;
+}
+
+.entree {
+  animation: appearance 1.5s;
+  animation-fill-mode: both;
+  animation-delay: .3s;
+}
+
 .bottom-button {
   border-radius: 2rem;
   border: 0px solid $colour-primary;
@@ -242,3 +263,4 @@ footer {
       display: flex;
     }
 }
+  
